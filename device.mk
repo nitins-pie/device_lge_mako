@@ -227,6 +227,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/configs/touch_dev.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/touch_dev.idc
 
+PRODUCT_PACKAGES += \
+    keystore.msm8960 \
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-service
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
