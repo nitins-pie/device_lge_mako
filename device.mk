@@ -143,13 +143,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keychars/keypad_8064.kcm:$(TARGET_COPY_OUT_VENDOR)/usr/keychars/keypad_8064.kcm \
     $(LOCAL_PATH)/keychars/pmic8xxx_pwrkey.kcm:$(TARGET_COPY_OUT_VENDOR)/usr/keychars/pmic8xxx_pwrkey.kcm
 
-# Keymaster
+# Bluetooth HAL
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl
+	android.hardware.bluetooth@1.0-impl \
+	android.hardware.bluetooth@1.0-service \
+	libbt-vendor
 
-# Keystore
-PRODUCT_PACKAGES += \
-    keystore.msm8960
+PRODUCT_CHARACTERISTICS := nosdcard
 
 # Lights
 PRODUCT_PACKAGES += \
