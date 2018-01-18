@@ -41,6 +41,9 @@ TARGET_BOARD_PLATFORM := msm8960
 TARGET_BOOTLOADER_BOARD_NAME := MAKO
 TARGET_BOARD_INFO_FILE := device/lge/mako/board-info.txt
 
+# Exclude serif fonts for saving system.img size.
+EXCLUDE_SERIF_FONTS := true
+
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/mako/bluetooth
 
 # FIXME: HOSTAPD-derived wifi driver
