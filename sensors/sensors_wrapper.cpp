@@ -44,6 +44,8 @@ static int open_lib()
     if (lib_handle != NULL)
         return 0;
 
+    #define EINVAL 22 /* Invalid argument */
+
     lib_handle = dlopen(SENSOR_LIB, RTLD_LAZY);
     if (lib_handle == NULL) {
         ALOGW("dlerror(): %s", dlerror());
