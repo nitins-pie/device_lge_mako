@@ -196,8 +196,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-impl \
-    power.mako
+    android.hardware.power@1.0-impl
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -215,6 +214,9 @@ PRODUCT_PACKAGES += \
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	rild.libpath=/system/lib/libril-qc-qmi-1.so
 
 # Sensors
 PRODUCT_PACKAGES += \
