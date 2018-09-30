@@ -227,10 +227,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	rild.libpath=/system/lib/libril-qc-qmi-1.so
 
-# Sensors
+# Sensors HAL
 PRODUCT_PACKAGES += \
     sensors.msm8960 \
-    android.hardware.sensors@1.0-impl
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service
 
 # Touchscreen calibration
 PRODUCT_COPY_FILES += \
