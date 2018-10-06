@@ -82,7 +82,7 @@ WIFI_DRIVER_FW_PATH_AP  := "ap"
 
 # Display
 TARGET_USES_ION := true
-TARGET_DISPLAY_USE_RETIRE_FENCE := true
+TARGET_DISPLAY_USE_RETIRE_FENCE := false
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 # Lights
