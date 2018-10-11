@@ -28,3 +28,6 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter mako occam, $(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
+
+LOCAL_SRC_FILES := \
+	libshim\shim.cpp
